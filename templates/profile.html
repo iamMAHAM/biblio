@@ -1,0 +1,34 @@
+{ % include header.html% }
+
+<section>
+    {% block content %}
+    <!DOCTYPE html>
+    <h1>Profil de l'utilisateur</h1>
+    
+    <div>
+        <img src="" alt="Image de profile">
+        <h2>Nom de l'utilisateur</h2>
+        <p>Email de l'utilisateur</p>
+    </div>
+    
+    <div>
+        <h3>Livres empruntés :</h3>
+        <div>
+            <img src="" alt="Image du livre">
+            <p>Titre du livre 1</p>
+        </div>
+        <div>
+            <img src="" alt="Image du livre">
+            <p>Titre du livre 2</p>
+        </div>
+        <div>
+            <img src="" alt="Image du livre">
+            <p>Titre du livre 3</p>
+        </div>
+    </div>
+    <form enctype="multipart/form-data" action="/update-profile-image" method="POST">
+        <input type="file" name="profile-image" accept="image/*">
+        <button type="submit">Mettre à jour la photo de profil</button>
+    </form>
+{% endblock %}
+</section>
