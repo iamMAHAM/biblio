@@ -10,7 +10,7 @@ ul {
 }
 .sec-title .title {
   position: relative;
-  color: #00b8ca;
+  color: #0d6efd;
   font-size: 18px;
   font-weight: 700;
   padding-right: 50px;
@@ -20,7 +20,7 @@ ul {
 }
 .sec-title .title:before {
   position: absolute;
-  content: "";
+  content: '';
   right: 0;
   bottom: 7px;
   width: 40px;
@@ -46,7 +46,7 @@ ul {
 .contact-page-section .inner-container {
   position: relative;
   z-index: 1;
-  background-color: #00b8ca;
+  background-color: #0d6efd;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
 }
 .contact-page-section .form-column {
@@ -102,8 +102,8 @@ ul {
   position: relative;
   margin-bottom: 20px;
 }
-.contact-form input[type="text"],
-.contact-form input[type="email"],
+.contact-form input[type='text'],
+.contact-form input[type='email'],
 .contact-form textarea {
   position: relative;
   display: block;
@@ -119,10 +119,10 @@ ul {
   -ms-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
 }
-.contact-form input[type="text"]:focus,
-.contact-form input[type="email"]:focus,
+.contact-form input[type='text']:focus,
+.contact-form input[type='email']:focus,
 .contact-form textarea:focus {
-  border-color: #00b8ca;
+  border-color: #0d6efd;
 }
 .contact-form textarea {
   height: 250px;
@@ -134,9 +134,9 @@ ul {
   margin-top: 10px;
   text-transform: capitalize;
   padding: 16px 39px;
-  border: 2px solid #00b8ca;
+  border: 2px solid #0d6efd;
   font-family: Arimo, sans-serif;
-  background: #00b8ca;
+  background: #0d6efd;
   display: inline-block;
   position: relative;
   line-height: 24px;
@@ -144,8 +144,8 @@ ul {
   color: #fff;
 }
 .contact-form .theme-btn:hover {
-  color: #00b8ca;
-  border-color: #00b8ca;
+  color: #0d6efd;
+  border-color: #0d6efd;
   background: 0 0;
 }
 .contact-form input.error,

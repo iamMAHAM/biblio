@@ -3,13 +3,23 @@
 {% load static %}
 {% block content %}
 <div class="container">
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h1 class='text-center m-2'>Tous les livres</h1>
+    <div class="books d-flex flex-row flex-wrap">
+        {% for book in books %}
+        <div class="card m-3" style="width: 18rem;">
+            <img src="https://images.unsplash.com/photo-1591171291116-6310ea27c3f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dW4lMjBsaXZyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+            class="card-img-top"
+            alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ book.title }}</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">{{book.author}}</h6>
+              <p class="card-text">Ceci est la description du livre on se chamaille pour une siege comme actu je n'ai rian à dire</p>
+              <a href="#" class="btn btn-primary">plus d'info</a>
+            </div>
         </div>
+        {%endfor%}
     </div>
 </div>
 {% endblock content %}
+
+
