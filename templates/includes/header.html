@@ -1,43 +1,79 @@
-<div id="custom-bootstrap-menu" class="navbar navbar-default" role="navigation">
-    <div class="container">
-      <div class="navbar-header"><a class="navbar-brand" href="#"><span class="glyphicon glyphicon-globe"></span></a>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse navbar-menubuilder">
-            <ul class="nav navbar-nav navbar-left">
-                <li><a href="#" class="hvr-underline-reveal">Accueil</a>
-                </li>
-                <li><a href="#" class="hvr-underline-reveal">Livres</a>
-                </li>
-                <li><a href="#" class="hvr-underline-reveal">Contact</a>
-                </li>
-            </ul>
-        </div>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><h1>Biblio</h1></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Livres</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Connexion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Inscription</a>
+        </li>
+        <li class="nav-item f-left">
+          <a class="nav-link" href="#">Profil</a>
+        </li>
+      </ul>
     </div>
-</div>
-<section class="py-8">
-    <div class="container">
-      <div class="p-8 bg-primary rounded">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-6 mb-10 mb-md-0">
-            <h3 class="h4 fw-bold">
-              <span class="text-success">Try For Free</span>
-              <span class="text-white">New Features</span>
-            </h3>
-            <p class="mb-10 small text-white">No charge for seven days</p>
-            <a class="btn btn-lg p-0 text-white d-flex align-items-center" href="#">
-              <svg width="12" height="14" viewbox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.92 6.62C11.8724 6.49725 11.801 6.38511 11.71 6.29L6.71 1.29C6.61676 1.19676 6.50607 1.1228 6.38425 1.07234C6.26243 1.02188 6.13186 0.995911 6 0.995911C5.7337 0.995911 5.4783 1.1017 5.29 1.29C5.19676 1.38324 5.1228 1.49393 5.07234 1.61575C5.02188 1.73758 4.99591 1.86814 4.99591 2C4.99591 2.2663 5.1017 2.5217 5.29 2.71L8.59 6H1C0.734784 6 0.48043 6.10536 0.292893 6.2929C0.105357 6.48043 0 6.73479 0 7C0 7.26522 0.105357 7.51957 0.292893 7.70711C0.48043 7.89465 0.734784 8 1 8H8.59L5.29 11.29C5.19627 11.383 5.12188 11.4936 5.07111 11.6154C5.02034 11.7373 4.9942 11.868 4.9942 12C4.9942 12.132 5.02034 12.2627 5.07111 12.3846C5.12188 12.5064 5.19627 12.617 5.29 12.71C5.38296 12.8037 5.49356 12.8781 5.61542 12.9289C5.73728 12.9797 5.86799 13.0058 6 13.0058C6.13201 13.0058 6.26272 12.9797 6.38458 12.9289C6.50644 12.8781 6.61704 12.8037 6.71 12.71L11.71 7.71C11.801 7.6149 11.8724 7.50275 11.92 7.38C12.02 7.13654 12.02 6.86346 11.92 6.62Z" fill="#D7D5F8"></path>
-              </svg>
-              <span class="ms-2">Check demo</span>
-            </a>
-          </div>
-          <div class="col-12 col-md-6 col-lg-auto ms-auto">
-            <img class="d-none d-md-block mx-auto img-fluid" style="height: 12rem;" src="artemis-assets/images/chart-folder.png" alt="">
-            <img class="d-md-none mx-auto img-fluid" src="artemis-assets/images/chart-folder.png" alt="">
-          </div>
+  </div>
+</nav>
+
+<header>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/RCAhiGJsUUE/1920x1080')">
+        <div class="carousel-caption">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1920x1080')">
+        <div class="carousel-caption">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('https://source.unsplash.com/lHGeqh3XhRY/1920x1080')">
+        <div class="carousel-caption">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
         </div>
       </div>
     </div>
-  </section>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</header>
+
+<!-- Page Content -->
+<section class="py-5">
+  <div class="container">
+    <h1 class="fw-light">Half Page Image Slider</h1>
+    <p class="lead">The background images for the slider are set directly in the HTML using inline CSS. The images
+      in this snippet are from <a href="https://unsplash.com">Unsplash</a>!</p>
+  </div>
+</section>
