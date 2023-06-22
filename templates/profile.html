@@ -162,14 +162,15 @@
                 <div
                   class="bg-secondary d-lg-inline-block py-1-9 px-1-9 px-sm-6 mb-1-9 rounded"
                 >
-                  <h3 class="h2 text-white mb-0">Fred Kesse Python</h3>
+                  <h3 class="h2 text-white mb-0">{{ user.nom}}</h3>
                 </div>
                 <ul class="list-unstyled mb-1-9">
                   <li class="mb-2 mb-xl-3 display-28">
                     <span class="display-26 text-secondary me-2 font-weight-600"
                       >Nom d'utilisateur:</span
                     >
-                    Le mental <button class="btn1">Modifier</button>
+                    {{user.username}}
+                    <button class="btn1">Modifier</button>
                   </li>
                   <li class="mb-2 mb-xl-3 display-28">
                     <span class="display-26 text-secondary me-2 font-weight-600"
@@ -181,7 +182,7 @@
                     <span class="display-26 text-secondary me-2 font-weight-600"
                       >Email:</span
                     >
-                    python@mail.com
+                    {{user.email}}
                   </li>
                   <li class="mb-2 mb-xl-3 display-28">
                     <span class="display-26 text-secondary me-2 font-weight-600"

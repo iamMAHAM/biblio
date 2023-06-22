@@ -1,9 +1,10 @@
 <link rel="stylesheet" href="../../static/css/login.css">
   <div class="container">
     <h2>Connexion</h2>
-    <form>
-      <input type="text" placeholder="Nom d'utilisateur" required>
-      <input type="password" placeholder="Mot de passe" required>
+    <form method='POST'>
+      {% csrf_token %}
+      <input type="text" placeholder="Nom d'utilisateur" required name='username'>
+      <input type="password" placeholder="Mot de passe" required name='mdp'>
       <input type="submit" value="Se connecter">
     </form>
   </div>
