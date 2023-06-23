@@ -1,55 +1,24 @@
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/register.css' %}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <title>Document</title>
-</head>
-<body>
-    <div class="container right-panel-active">
-        <!-- Sign Up -->
-        <div class="container__form container--signup">
-            <form action="#" class="form" id="form1">
-                <h2 class="form__title">S'INSCRIRE</h2>
-                <input type="text" placeholder="Nom & prénom(s)" class="input" />
-                <input type="email" placeholder="Email" class="input" />
-                <input type="password" placeholder="Mot de passe" class="input" />
-                <button class="btn" id="signup">S'inscrire</button>
-            </form>
-        </div>
-    
-        <!-- Sign In 
-        <div class="container__form container--signin">
-            <form action="#" class="form" id="form2">
-                <h2 class="form__title">SE CONNECTER</h2>
-                <input type="email" placeholder="Email" class="input" />
-                <input type="password" placeholder="Mot de passe" class="input" />
-                <a href="#" class="link">Mot de passe ?</a>
-                <button class="btn">Se connecter</button>
-            </form>
-        </div>
-        -->
-    
-        <!-- Overlay -->
+<div class="container right-panel-active">
+    <!-- Sign Up -->
+    <div class="container__form container--signup">
+        <form method='POST' class="form" id="form1">
+            {% csrf_token %}
+            <h2 class="form__title">S'INSCRIRE</h2>
+            <input type="text" placeholder="Nom & prénom(s)" class="input" />
+            <input type="email" placeholder="Email" class="input" />
+            <input type="password" placeholder="Mot de passe" class="input" />
+            <button class="btn" id="signup">S'inscrire</button>
+        </form>
+    </div>
+
         <div class="container__overlay">
-            <div class="overlay">
-               
-                <div class="overlay__panel overlay--left">
-                    <h2>Incrivez vous ici !</h2>
-                </div>
-               <!--
-                <div class="overlay__panel overlay--right">
-                    <button class="btn" id="signUp">S'inscrire</button>
-                </div>
-                -->
+        <div class="overlay">
+            
+            <div class="overlay__panel overlay--left">
+                <h2>Incrivez vous ici !</h2>
             </div>
         </div>
     </div>
-    <script src="{% static 'js/register.js' %}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
-</html>
+</div>

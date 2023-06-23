@@ -1,3 +1,9 @@
+from django.shortcuts import render, redirect
+from django.contrib.auth import authenticate, login as Login, logout as Logout
+from django.contrib import messages
+from app.models import Livre, Utilisateur
+from .forms import RegisterForm
+# Create your views here.
 from django.shortcuts import render
 
 
@@ -29,7 +35,20 @@ def login(request):
 
 
 def register(request):
-    return render(request, 'register.html')
+    if request.method == 'POST':
+        # get the post parameter
+        try:
+            form = RegisterForm(request.POST)
+            if (form.is_valid()):
+                form.save()
+                return redirect('login')
+
+            raise ValueError('form is not valid')
+        except Exception as e:
+            print(e)
+            return render(request, 'register.html')
+
+    return render(request, 'register.html', {'form': RegisterForm()})
 
 
 def about(request):
