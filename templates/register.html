@@ -6,9 +6,7 @@
         <form method='POST' class="form" id="form1">
             {% csrf_token %}
             <h2 class="form__title">S'INSCRIRE</h2>
-            <input type="text" placeholder="Nom & prénom(s)" class="input" />
-            <input type="email" placeholder="Email" class="input" />
-            <input type="password" placeholder="Mot de passe" class="input" />
+            {{ form }}
             <button class="btn" id="signup">S'inscrire</button>
         </form>
     </div>

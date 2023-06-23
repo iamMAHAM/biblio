@@ -31,6 +31,16 @@ def profile(request):
 
 
 def login(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        mdp = request.POST['mdp']
+        user = authenticate(request, username=username, password=mdp)
+        print(user)
+        if user:
+            Login(request, user)
+            return redirect('books')
+
+        return render(request, 'login.html')
     return render(request, 'login.html')
 
 
